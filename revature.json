@@ -1,0 +1,30 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/DoesNotContainTest.java",
+      "testCases": [
+        {
+          "methodName": "containsTest1",
+          "label": "Test case where the target is not in the array",
+          "description": "Verifies that the method returns 'true' when the target value '5' is absent from the array {0, 1, 2, 3, 4}."
+        },
+        {
+          "methodName": "containTest2",
+          "label": "Test case where the target is present in the array",
+          "description": "Verifies that the method returns 'false' when the target value '4' is present in the array {0, 1, 2, 3, 4}."
+        },
+        {
+          "methodName": "containTest3",
+          "label": "Test case with different array values, target is absent",
+          "description": "Verifies that the method returns 'true' when the target value '5' is absent from the array {8, 7, 3, 6}."
+        },
+        {
+          "methodName": "containTest4",
+          "label": "Test case with duplicate values, target is present",
+          "description": "Verifies that the method returns 'false' when the target value '7' is present (and duplicated) in the array {9, 7, 7, 3}."
+        }
+      ]
+    }
+  ]
+}
